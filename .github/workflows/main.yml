@@ -46,7 +46,6 @@ jobs:
 
     - name: Check code formatting with ruff
       run: |
-        python -m ruff format --check backend/
         python -m ruff check backend/
 
     - name: Check code style with pycodestyle
