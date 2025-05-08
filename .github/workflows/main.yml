@@ -55,7 +55,7 @@ jobs:
 
     - name: Run django tests
       env:
-        DJANGO_USE_SQLITE: ${{ matrix.use_sqlite }}
+        USE_SQLITE: ${{ matrix.use_sqlite }}
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: django_password
         POSTGRES_DB: django_db
