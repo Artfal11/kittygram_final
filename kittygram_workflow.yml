@@ -51,6 +51,7 @@ jobs:
 
     - name: Run django tests
       env:
+        SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
         USE_SQLITE: ${{ matrix.use_sqlite }}
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: django_password
