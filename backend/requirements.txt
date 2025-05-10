@@ -3,7 +3,7 @@ djangorestframework==3.14.0
 djoser==2.1.0
 webcolors==1.13
 psycopg2-binary==2.9.9
-Pillow==9.5.0
+Pillow==10.3.0
 pytest==7.4.0
 pytest-django==4.5.2
 pytest-pythonpath==0.7.1
