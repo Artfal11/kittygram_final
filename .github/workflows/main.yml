@@ -41,17 +41,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install ruff==0.8.0 pycodestyle
+        pip install ruff==0.8.0
         pip install -r ./backend/requirements.txt
 
     - name: Check code formatting with ruff
       run: |
         python -m ruff format --check backend/
         python -m ruff check backend/
-
-    - name: Check code style with pycodestyle
-      run: |
-        pycodestyle --exclude=migrations backend/
 
     - name: Run django tests
       env:
